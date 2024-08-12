@@ -29,18 +29,18 @@ const Hero = () => {
                      animate="visible"
                      className="text-gray-500">Healthy and yummy food for fresh morning breakfast. Eat Daily for good health and mind Order now and get 20% off on your first order.</motion.p>
                 {/* Button section */}
-                <div className="flex justify-center md:justify-start">
-                    <motion.button
-                    variants={FadeRight(1.5)}
-                    initial="hidden"
-                    animate="visible"
-                    className="primary-btn flex items-center gap-2">
+                <motion.div 
+                variants={FadeRight(1.5)}
+                initial="hidden"
+                animate="visible"
+                className="flex justify-center md:justify-start">
+                    <button className="primary-btn flex items-center gap-2">
                         <span>
                             <IoBagHandleOutline/>
                         </span>
                         Order Now
-                    </motion.button>
-                </div>
+                    </button>
+                </motion.div>
                 </div>
             </div>
             {/* Hero Image */}
